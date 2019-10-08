@@ -51,6 +51,7 @@ public class MainActivity extends ButlerActivity {
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        checkUpdate();
         refresh();
     }
 	public void refresh(){
@@ -319,5 +320,8 @@ public class MainActivity extends ButlerActivity {
         	
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void checkUpdate(){
+    	
     }
 }
